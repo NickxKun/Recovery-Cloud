@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
-    android:background="#fff">
+    tools:context=".Activities.RegisterActivity"
+    android:background="#050505">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -15,6 +15,10 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <EditText
+        android:fontFamily="@font/Nexa"
+        android:textFontWeight="200"
+        android:textColor="@color/white"
+        android:textColorHint="#a0a0a0"
         android:background="@drawable/reg_input_field"
         android:hint="Name"
         android:id="@+id/regName"
@@ -32,6 +36,10 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        android:fontFamily="@font/Nexa"
+        android:textFontWeight="200"
+        android:textColor="@color/white"
+        android:textColorHint="#a0a0a0"
         android:background="@drawable/reg_input_field"
         android:hint="Mail"
         android:id="@+id/regMail"
@@ -49,6 +57,10 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        android:fontFamily="@font/Nexa"
+        android:textFontWeight="200"
+        android:textColor="@color/white"
+        android:textColorHint="#a0a0a0"
         android:background="@drawable/reg_input_field"
         android:hint="Password"
         android:id="@+id/regPassword"
@@ -66,6 +78,10 @@
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <EditText
+        android:fontFamily="@font/Nexa"
+        android:textFontWeight="200"
+        android:textColor="@color/white"
+        android:textColorHint="#a0a0a0"
         android:background="@drawable/reg_input_field"
         android:hint="Confirm Password"
         android:id="@+id/regPassword2"
@@ -83,6 +99,8 @@
         app:layout_constraintTop_toBottomOf="@+id/regPassword" />
 
     <Button
+        android:fontFamily="@font/Nexa"
+        android:background="@drawable/reg_btn_style"
         android:id="@+id/regBtn"
         android:layout_width="151dp"
         android:layout_height="wrap_content"
@@ -108,5 +126,15 @@
         app:layout_constraintEnd_toEndOf="@+id/regBtn"
         app:layout_constraintStart_toStartOf="@+id/regBtn"
         app:layout_constraintTop_toTopOf="@+id/regBtn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/regName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/Recovery_Cloud_Logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
