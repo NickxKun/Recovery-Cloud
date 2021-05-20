@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.loginBtn);
         loginProgress = findViewById(R.id.login_progress);
         mAuth = FirebaseAuth.getInstance();
-        HomeActivity = new Intent(this, com.example.recovery_cloud.Activities.HomeActivity.class);
+        HomeActivity = new Intent(this, com.example.recovery_cloud.Activities.Home.class);
         regLink = findViewById(R.id.regLink);
         regLink.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Recovery_Cloud</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_my_cloud">My Cloud</string>
+    <string name="title_symptom_monitor">Symptom Monitor</string>
+    <string name="title_diet_and_exercise">Diet And Exercise</string>
+    <string name="title_progress_tracker">Progress Tracker</string>
 </resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.recovery_cloud.Activities.ui.home.HomeFragment"
+        android:label="@string/title_my_cloud"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_symptom_monitor"
+        android:name="com.example.recovery_cloud.Activities.ui.symptom_monitor.SymptomMonitorFragment"
+        android:label="@string/title_symptom_monitor"
+        tools:layout="@layout/fragment_symptom_monitor" />
+
+    <fragment
+        android:id="@+id/navigation_diet_and_exercise"
+        android:name="com.example.recovery_cloud.Activities.ui.diet_and_exercise.DietAndExerciseFragment"
+        android:label="@string/title_diet_and_exercise"
+        tools:layout="@layout/fragment_diet_and_exercise" />
+
+    <fragment
+        android:id="@+id/navigation_progress_tracker"
+        android:name="com.example.recovery_cloud.Activities.ui.progress_tracker.ProgressTrackerFragment"
+        android:label="@string/title_progress_tracker"
+        tools:layout="@layout/fragment_progress_tracker" />
+
+
+</navigation>
