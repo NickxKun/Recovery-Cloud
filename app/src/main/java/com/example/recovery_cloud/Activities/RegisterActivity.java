@@ -40,6 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         //ini views
+
         userEmail = findViewById(R.id.regMail);
         userPassword = findViewById(R.id.regPassword);
         userPAssword2 = findViewById(R.id.regPassword2);

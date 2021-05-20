@@ -9,8 +9,6 @@
 
 
     <EditText
-        android:fontFamily="@font/nexa_family"
-        android:textFontWeight="200"
         android:id="@+id/login_mail"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
@@ -37,8 +35,6 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <EditText
-        android:fontFamily="@font/nexa_family"
-        android:textFontWeight="200"
         android:id="@+id/login_password"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
@@ -58,8 +54,6 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
-        android:fontFamily="@font/nexa_family"
-        android:background="@drawable/reg_btn_style"
         android:id="@+id/loginBtn"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
@@ -95,7 +89,6 @@
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginBottom="16dp"
-        android:fontFamily="@font/nexa_family"
         android:text="Welcome to"
         android:textColor="#fff"
         android:textSize="30dp"
@@ -106,8 +99,6 @@
         android:gravity="center_horizontal" />
 
     <TextView
-        android:fontFamily="@font/nexa_family"
-        android:textFontWeight="200"
         android:id="@+id/regLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
