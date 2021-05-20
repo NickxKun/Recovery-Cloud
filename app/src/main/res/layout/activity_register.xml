@@ -15,7 +15,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <EditText
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
         android:textColor="@color/white"
         android:textColorHint="#a0a0a0"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
         android:textColor="@color/white"
         android:textColorHint="#a0a0a0"
@@ -57,7 +57,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
         android:textColor="@color/white"
         android:textColorHint="#a0a0a0"
@@ -78,7 +78,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <EditText
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
         android:textColor="@color/white"
         android:textColorHint="#a0a0a0"
@@ -99,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/regPassword" />
 
     <Button
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:background="@drawable/reg_btn_style"
         android:id="@+id/regBtn"
         android:layout_width="151dp"
@@ -135,6 +135,6 @@
         app:layout_constraintBottom_toTopOf="@+id/regName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/Recovery_Cloud_Logo" />
+        app:srcCompat="@drawable/recovery_cloud" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

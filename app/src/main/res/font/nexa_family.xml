@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <font-family xmlns:android="http://schemas.android.com/apk/res/android">
-
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/NexaBlack" />
+        android:font="@font/nexa_black" />
     <font
         android:fontStyle="italic"
         android:fontWeight="400"
-        android:font="@font/NexaBlackItalic" />
-    <font
-        android:fontStyle="normal"
-        android:fontWeight="200"
-        android:font="@font/NexaLight" />
+        android:font="@font/nexa_black_italic" />
     <font
         android:fontStyle="italic"
         android:fontWeight="200"
-        android:font="@font/NexaLightItalic" />
-
+        android:font="@font/nexa_light" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="200"
+        android:font="@font/nexa_light_italic" />
 </font-family>

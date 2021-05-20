@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "381866462642",
+    "project_id": "recovery-cloud",
+    "storage_bucket": "recovery-cloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381866462642:android:e69f7871cd686bd03128ab",
+        "android_client_info": {
+          "package_name": "com.example.recovery_cloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381866462642-7evhgij5bsdhpoevum6voqhkir758ftv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGmljoMYMwYVO8jMilOAlQ3EWYmyVVFYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381866462642-7evhgij5bsdhpoevum6voqhkir758ftv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

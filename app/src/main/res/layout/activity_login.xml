@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
         android:id="@+id/login_mail"
         android:layout_width="265dp"
@@ -37,7 +37,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <EditText
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
         android:id="@+id/login_password"
         android:layout_width="265dp"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:background="@drawable/reg_btn_style"
         android:id="@+id/loginBtn"
         android:layout_width="136dp"
@@ -95,20 +95,20 @@
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginBottom="16dp"
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:text="Welcome to"
-        android:textAlignment="center"
         android:textColor="#fff"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal" />
 
     <TextView
-        android:fontFamily="@font/Nexa"
+        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
-        android:id="@+id/textView2"
+        android:id="@+id/regLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -127,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/Recovery_Cloud_Logo" />
+        app:srcCompat="@drawable/recovery_cloud" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
