@@ -15,7 +15,6 @@
         android:text="Welcome, Name"
         android:textColor="@color/white"
         android:textSize="24dp"
-        android:fontFamily="@font/nexa_family"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -34,7 +33,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Start Your\nAssessment Now"
-        android:fontFamily="@font/nexa_family"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
@@ -47,7 +45,6 @@
         android:layout_marginBottom="16dp"
         android:text="Day 01"
         android:textColor="@color/white"
-        android:fontFamily="@font/nexa_family"
         android:textFontWeight="200"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2" />
