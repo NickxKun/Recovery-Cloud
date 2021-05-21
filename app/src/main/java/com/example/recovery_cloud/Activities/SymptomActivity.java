@@ -72,7 +72,8 @@ public class SymptomActivity extends AppCompatActivity {
                 email = profile.getEmail();
             }
         }
-        user_ref = FirebaseDatabase.getInstance().getReference().child("Symptom");
+        user_ref = FirebaseDatabase.getInstance().getReference("Symptom");
+
 
         //symptomInfo = new SymptomInfo();
 
