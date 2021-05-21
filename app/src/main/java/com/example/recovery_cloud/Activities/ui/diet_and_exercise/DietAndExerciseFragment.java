@@ -9,22 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.MediaController;
-import android.widget.TextView;
-import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.recovery_cloud.R;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class DietAndExerciseFragment extends Fragment {
 
     private Dialog myDialog;
-    private VideoView videoView;
     private Button be_btn, dh_btn, rs_btn, mh_btn;
-    private MediaController mCont;
 
     private DietAndExerciseViewModel dietAndExerciseViewModel;
 
@@ -36,17 +34,19 @@ public class DietAndExerciseFragment extends Fragment {
 
         myDialog = new Dialog(getActivity());
 
+
         be_btn = root.findViewById(R.id.button_breathing_exercise);
         dh_btn = root.findViewById(R.id.button_diet_and_hydration);
         rs_btn = root.findViewById(R.id.button_regain_smell_taste);
         mh_btn = root.findViewById(R.id.button_mental_health);
-        videoView = root.findViewById(R.id.videoViewId);
+
+        YouTubePlayerView youTubePlayerView = root.findViewById(R.id.youtube_player_view);
 
         be_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                showPopup(v, "android.resource://" + getActivity().getPackageName() + "/"+R.raw.one);
+                showPopup(v, "");
 
             }
         });
@@ -54,47 +54,33 @@ public class DietAndExerciseFragment extends Fragment {
         dh_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showPopup(v, "android.resource://" + getActivity().getPackageName() + "/"+R.raw.two);
+                showPopup(v, "");
             }
         });
 
         rs_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showPopup(v, "android.resource://" + getActivity().getPackageName() + "/"+R.raw.three);
+                showPopup(v, "");
             }
         });
 
         mh_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showPopup(v, "android.resource://" + getActivity().getPackageName() + "/"+R.raw.four);
+                showPopup(v, "");
             }
         });
 
         return root;
     }
 
+
     public void showPopup(View v, String called_by) {
+
         ImageView closeBtn;
-        TextView calledByTextView;
-
-        mCont = new MediaController(getActivity());
-/*
-        videoView.setVideoPath(called_by);
-
-        mCont.setAnchorView(videoView);
-
-        videoView.setMediaController(mCont);
-
-        videoView.start();*/
-
         myDialog.setContentView(R.layout.custom_popup);
         closeBtn = (ImageView) myDialog.findViewById(R.id.txt_close);
-        calledByTextView = (TextView) myDialog.findViewById(R.id.popup_caller);
-
-        calledByTextView.setText(called_by);
-
         closeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,6 +89,7 @@ public class DietAndExerciseFragment extends Fragment {
         });
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         myDialog.show();
+
     }
 
 }

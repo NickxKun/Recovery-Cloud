@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.recovery_cloud"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -48,6 +48,10 @@ dependencies {
 
     // firebase database
     implementation 'com.google.firebase:firebase-database'
+
+    // youtube API
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+
 
     // glide library
     implementation 'com.github.bumptech.glide:glide:4.12.0'

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="350dp"
     android:layout_height="475dp"
@@ -17,24 +18,23 @@
         android:gravity="center"
         android:textColor="@color/white"
         android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/popup_caller"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_marginTop="95dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Popup"
-            android:gravity="center"
-            android:textColor="@color/white" />
 
-        <VideoView
-            android:id="@+id/videoViewId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            app:autoPlay="true"
+            app:showFullScreenButton="false"
+            app:videoId="9xfKY9kMPV0" />
 
     </LinearLayout>
+
 
 </LinearLayout>
