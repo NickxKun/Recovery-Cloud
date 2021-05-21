@@ -15,7 +15,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.recovery_cloud.R;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class DietAndExerciseFragment extends Fragment {
 
@@ -38,7 +37,7 @@ public class DietAndExerciseFragment extends Fragment {
         rs_btn = root.findViewById(R.id.weakness_btn);
         mh_btn = root.findViewById(R.id.loss_of_smell_taste_btn);
 
-        YouTubePlayerView youTubePlayerView = root.findViewById(R.id.youtube_player_view);
+        //YouTubePlayerView youTubePlayerView = root.findViewById(R.id.youtube_player_view);
 
         be_btn.setOnClickListener(new View.OnClickListener() {
             @Override

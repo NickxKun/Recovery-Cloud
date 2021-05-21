@@ -36,7 +36,17 @@ public class SymptomInfo {
         return temp;
     }
 
-    public void setFever(Boolean fever){
+    public SymptomInfo(String email, Boolean fever, Boolean breath, Boolean senses, Boolean fatigue, Boolean depr, Boolean cough){
+        this.userEmail = email;
+        this.fever = fever;
+        this.breath = breath;
+        this.senses = senses;
+        this.fatigue = fatigue;
+        this.depr = depr;
+        this.cough = cough;
+    }
+
+    /*public void setFever(Boolean fever){
         this.fever = fever;
     }
     public void setBreath(Boolean breath){
@@ -62,5 +72,5 @@ public class SymptomInfo {
     }
     public void setEmail(String email){
         this.userEmail = email;
-    }
+    }*/
 }

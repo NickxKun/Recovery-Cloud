@@ -36,7 +36,7 @@ public class SymptomActivity extends AppCompatActivity {
     private DatabaseReference user_ref;
     private Button asses_btn;
     private String email;
-    SymptomInfo symptomInfo;
+    //SymptomInfo symptomInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,9 +72,9 @@ public class SymptomActivity extends AppCompatActivity {
                 email = profile.getEmail();
             }
         }
-        user_ref = FirebaseDatabase.getInstance().getReference("UserInfo");
+        user_ref = FirebaseDatabase.getInstance().getReference().child("Symptom");
 
-        symptomInfo = new SymptomInfo();
+        //symptomInfo = new SymptomInfo();
 
         asses_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,24 +87,24 @@ public class SymptomActivity extends AppCompatActivity {
                 selectedid = hosp_radio.getCheckedRadioButtonId();
                 selected_hosp = (RadioButton) findViewById(selectedid);
                 final String hosp = selected_hosp.getText().toString();
-                Boolean fever = Boolean.FALSE;
-                Boolean breath = Boolean.FALSE;
-                Boolean senses = Boolean.FALSE;
-                Boolean fatigue = Boolean.FALSE;
-                Boolean depr = Boolean.FALSE;
-                Boolean cough = Boolean.FALSE;
+                Boolean fever = false;
+                Boolean breath = false;
+                Boolean senses = false;
+                Boolean fatigue = false;
+                Boolean depr = false;
+                Boolean cough = false;
                 if (fever_check.isChecked())
-                    fever = Boolean.TRUE;
+                    fever = true;
                 if (breath_check.isChecked())
-                    breath = Boolean.TRUE;
+                    breath = true;
                 if (senses_check.isChecked())
-                    senses = Boolean.TRUE;
+                    senses = true;
                 if (fatigue_check.isChecked())
-                    fatigue = Boolean.TRUE;
+                    fatigue = true;
                 if (depr_check.isChecked())
-                    depr = Boolean.TRUE;
+                    depr = true;
                 if (cough_check.isChecked())
-                    cough = Boolean.TRUE;
+                    cough = true;
 
                 if (gender.isEmpty() || age.isEmpty() || hosp.isEmpty()) {
                     showMessage("Please Verify all fields");
@@ -112,14 +112,17 @@ public class SymptomActivity extends AppCompatActivity {
                 }
                 else{
                     showMessage("Going to add symptom");
-                    addSymptom(email, fever, breath, senses, fatigue, depr, cough);
+                    SymptomInfo symptomInfo = new SymptomInfo(email, fever, breath, senses, fatigue, depr, cough);
+                    user_ref.push().setValue(symptomInfo);
+                    showMessage("Data added");
+                    //addSymptom(email, fever, breath, senses, fatigue, depr, cough);
 
                 }
 
             }
         });
 }
-private void addSymptom(String email, Boolean fever,Boolean breath, Boolean senses, Boolean fatigue, Boolean depr, Boolean cough){
+/*private void addSymptom(String email, Boolean fever,Boolean breath, Boolean senses, Boolean fatigue, Boolean depr, Boolean cough){
         symptomInfo.setEmail(email);
         symptomInfo.setFever(fever);
         symptomInfo.setBreath(breath);
@@ -129,11 +132,11 @@ private void addSymptom(String email, Boolean fever,Boolean breath, Boolean sens
         symptomInfo.setCough(cough);
         showMessage("going to add");
 
-        user_ref.child(email).setValue(symptomInfo);
+        user_ref.push().setValue(symptomInfo);
         showMessage("Data added");
 
 
-}
+}*/
     private void showMessage(String message) {
 
         Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
