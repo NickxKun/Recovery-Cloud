@@ -8,7 +8,7 @@
     android:background="@color/black">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/user_welcome_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -27,7 +27,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/start_ass_btn"
         android:padding="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,19 +35,18 @@
         android:text="Start Your\nAssessment Now"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        android:backgroundTint="#663a82" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/day_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="Day 01"
         android:textColor="@color/white"
         android:textFontWeight="200"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        app:layout_constraintBottom_toTopOf="@+id/user_welcome_msg"
+        app:layout_constraintStart_toStartOf="@+id/user_welcome_msg" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

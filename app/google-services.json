@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "502888881983",
-    "project_id": "recoverycloud-81b51",
-    "storage_bucket": "recoverycloud-81b51.appspot.com"
+    "project_number": "381866462642",
+    "firebase_url": "https://recovery-cloud-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "recovery-cloud",
+    "storage_bucket": "recovery-cloud.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:502888881983:android:312d2d97f43b1255c47d8a",
+        "mobilesdk_app_id": "1:381866462642:android:e69f7871cd686bd03128ab",
         "android_client_info": {
           "package_name": "com.example.recovery_cloud"
         }
       },
       "oauth_client": [
         {
-          "client_id": "502888881983-q6vptohf37nlpri48rldjqoj0ad5hjfc.apps.googleusercontent.com",
+          "client_id": "381866462642-7evhgij5bsdhpoevum6voqhkir758ftv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBU8-A1jYnl3y3Qc4Qkn_2JMTj5wMGE2BU"
+          "current_key": "AIzaSyAGmljoMYMwYVO8jMilOAlQ3EWYmyVVFYU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "502888881983-q6vptohf37nlpri48rldjqoj0ad5hjfc.apps.googleusercontent.com",
+              "client_id": "381866462642-7evhgij5bsdhpoevum6voqhkir758ftv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

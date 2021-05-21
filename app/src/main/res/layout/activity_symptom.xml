@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.SymptomActivity">
+    tools:context=".Activities.SymptomActivity"
+    android:paddingHorizontal="30dp"
+    android:background="@color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enter your Gender"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            />
 
         <RadioGroup
             android:id="@+id/gender_radio"
@@ -29,19 +35,25 @@
                 android:id="@+id/male_radio_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Male" />
+                android:text="Male"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/female_radio_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Female" />
+                android:text="Female"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
 
             <RadioButton
                 android:id="@+id/others_radio_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Others" />
+                android:text="Others"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
         </RadioGroup>
 
         <TextView
@@ -49,21 +61,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enter your Age"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:paddingVertical="10dp"/>
 
         <EditText
             android:id="@+id/age_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:background="@drawable/form_edittext_field"/>
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Were you hospitalized?"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:paddingVertical="10dp"/>
 
         <RadioGroup
             android:id="@+id/hosp_radio"
@@ -74,13 +91,17 @@
                 android:id="@+id/hosp_radio_yes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Yes" />
+                android:text="Yes"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/hosp_radio_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No" />
+                android:text="No"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
         </RadioGroup>
 
         <TextView
@@ -88,43 +109,57 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Are you experiencing these Symptoms?"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:paddingVertical="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
 
         <CheckBox
             android:id="@+id/fever_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fever" />
+            android:text="Fever"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white" />
 
         <CheckBox
             android:id="@+id/breath_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Breathlessness" />
+            android:text="Breathlessness"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white" />
 
         <CheckBox
             android:id="@+id/senses_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Loss of taste/smell" />
+            android:text="Loss of taste/smell"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white" />
 
         <CheckBox
             android:id="@+id/fatigue_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fatigue" />
+            android:text="Fatigue"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white" />
 
         <CheckBox
             android:id="@+id/depr_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Depression" />
+            android:text="Depression"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white" />
 
         <CheckBox
             android:id="@+id/cough_check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cough/Sore throat" />
+            android:text="Cough/Sore throat"
+            android:paddingVertical="10dp"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/assesment_submit"

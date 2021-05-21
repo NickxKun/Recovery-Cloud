@@ -39,6 +39,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        getSupportActionBar().hide();
+
         //ini views
 
         userEmail = findViewById(R.id.regMail);
