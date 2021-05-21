@@ -28,11 +28,13 @@
 
     <Button
         android:id="@+id/start_ass_btn"
-        android:padding="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@drawable/symptom_btn"
+        android:padding="12dp"
         android:text="Start Your\nAssessment Now"
+        app:backgroundTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
