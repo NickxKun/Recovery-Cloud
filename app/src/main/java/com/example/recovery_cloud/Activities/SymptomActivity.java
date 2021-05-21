@@ -40,27 +40,26 @@ public class SymptomActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_symptom);
 
         getSupportActionBar().setTitle("Symptom Activity");
 
-        gender_radio = findViewById(R.id.gender_radio);
+        gender_radio = (RadioGroup) findViewById(R.id.gender_radio);
         male_radio_btn = findViewById(R.id.male_radio_btn);
         female_radio_btn = findViewById(R.id.female_radio_btn);
         others_radio_btn = findViewById(R.id.others_radio_btn);
-        age_input = findViewById(R.id.age_input);
-        hosp_radio = findViewById(R.id.hosp_radio);
+        age_input = (EditText) findViewById(R.id.age_input);
+        hosp_radio = (RadioGroup) findViewById(R.id.hosp_radio);
         hosp_radio_yes = findViewById(R.id.hosp_radio_yes);
         hosp_radio_no = findViewById(R.id.hosp_radio_no);
-        fever_check = findViewById(R.id.fever_check);
-        breath_check = findViewById(R.id.breath_check);
-        senses_check = findViewById(R.id.senses_check);
-        fatigue_check = findViewById(R.id.fatigue_check);
-        depr_check = findViewById(R.id.depr_check);
-        cough_check = findViewById(R.id.cough_check);
-        asses_btn = findViewById(R.id.assesment_submit);
+        fever_check = (CheckBox) findViewById(R.id.fever_check);
+        breath_check = (CheckBox) findViewById(R.id.breath_check);
+        senses_check = (CheckBox) findViewById(R.id.senses_check);
+        fatigue_check = (CheckBox) findViewById(R.id.fatigue_check);
+        depr_check = (CheckBox) findViewById(R.id.depr_check);
+        cough_check = (CheckBox) findViewById(R.id.cough_check);
+        asses_btn = (Button) findViewById(R.id.assesment_submit);
 
-
-        database = FirebaseDatabase.getInstance();
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
@@ -73,7 +72,7 @@ public class SymptomActivity extends AppCompatActivity {
                 email = profile.getEmail();
             }
         }
-        user_ref = database.getReference("UserInfo");
+        user_ref = FirebaseDatabase.getInstance().getReference("UserInfo");
 
         symptomInfo = new SymptomInfo();
 
@@ -82,11 +81,11 @@ public class SymptomActivity extends AppCompatActivity {
             public void onClick(View view) {
                 asses_btn.setVisibility(View.INVISIBLE);
                 int selectedid = gender_radio.getCheckedRadioButtonId();
-                selected_gender = findViewById(selectedid);
+                selected_gender = (RadioButton) findViewById(selectedid);
                 final String gender = selected_gender.getText().toString();
                 final String age = age_input.getText().toString();
                 selectedid = hosp_radio.getCheckedRadioButtonId();
-                selected_hosp = findViewById(selectedid);
+                selected_hosp = (RadioButton) findViewById(selectedid);
                 final String hosp = selected_hosp.getText().toString();
                 Boolean fever = Boolean.FALSE;
                 Boolean breath = Boolean.FALSE;
@@ -112,6 +111,7 @@ public class SymptomActivity extends AppCompatActivity {
                     asses_btn.setVisibility(View.VISIBLE);
                 }
                 else{
+                    showMessage("Going to add symptom");
                     addSymptom(email, fever, breath, senses, fatigue, depr, cough);
 
                 }
@@ -127,19 +127,12 @@ private void addSymptom(String email, Boolean fever,Boolean breath, Boolean sens
         symptomInfo.setFatigue(fatigue);
         symptomInfo.setDepr(depr);
         symptomInfo.setCough(cough);
+        showMessage("going to add");
 
-        user_ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-                user_ref.setValue(symptomInfo);
-                showMessage("Data Added");
-            }
+        user_ref.child(email).setValue(symptomInfo);
+        showMessage("Data added");
 
-            @Override
-            public void onCancelled(@NonNull @NotNull DatabaseError error) {
-                showMessage("Failed to add data");
-            }
-        });
+
 }
     private void showMessage(String message) {
 
