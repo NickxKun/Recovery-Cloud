@@ -9,163 +9,258 @@
     tools:context=".Activities.ui.symptom_monitor.SymptomMonitorFragment">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_symptom_monitor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:text="Symptom Monitor"
         android:textColor="@color/white"
         android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.19" />
-
-    <Button
-        android:id="@+id/button_breathing_exercise"
-        android:layout_width="92dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:padding="6dp"
-        android:text="View"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:src="@drawable/home_big_fancy_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="116dp"
-        android:layout_height="37dp"
-        android:text="FEVER"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_day_counter" />
 
-    <Button
-        android:id="@+id/button_diet_and_hydration"
-        android:layout_width="92dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:padding="12dp"
-        android:text="View"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_breathing_exercise" />
+
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/gradient_1"
         android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:src="@drawable/grad"
-        app:layout_constraintBottom_toBottomOf="@+id/button_diet_and_hydration"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_mental_health"
-        android:layout_width="92dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:padding="12dp"
-        android:text="View"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_regain_smell_taste" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_symptom_monitor" />
 
-    <Button
-        android:id="@+id/button_regain_smell_taste"
-        android:layout_width="92dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
+    <ImageView
+        android:id="@+id/gradient_2"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:padding="12dp"
-        android:text="View"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_diet_and_hydration" />
+        app:layout_constraintTop_toBottomOf="@+id/gradient_1" />
 
-    <Button
-        android:id="@+id/button_regain_smell_tast"
-        android:layout_width="92dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:padding="12dp"
-        android:text="View"
+    <ImageView
+        android:id="@+id/gradient_3"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_diet_and_hydration" />
+        app:layout_constraintTop_toBottomOf="@+id/gradient_2" />
 
-    <Button
-        android:id="@+id/button_regain_smell_tas"
-        android:layout_width="92dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:padding="12dp"
-        android:text="View"
+    <ImageView
+        android:id="@+id/gradient_4"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_diet_and_hydration" />
+        app:layout_constraintTop_toBottomOf="@+id/gradient_3" />
+
+    <ImageView
+        android:id="@+id/gradient_5"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradient_4" />
+
+    <ImageView
+        android:id="@+id/gradient_6"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradient_5" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/fever_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Fever"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_1"
+        app:layout_constraintStart_toStartOf="@+id/gradient_1"
+        app:layout_constraintTop_toTopOf="@+id/gradient_1" />
+
+    <TextView
+        android:id="@+id/cough_sore_throat_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Cough / Sore Throat"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_2"
+        app:layout_constraintStart_toStartOf="@+id/gradient_2"
+        app:layout_constraintTop_toTopOf="@+id/gradient_2" />
+
+    <TextView
+        android:id="@+id/weakness_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Weakness"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_3"
+        app:layout_constraintStart_toStartOf="@+id/gradient_3"
+        app:layout_constraintTop_toTopOf="@+id/gradient_3" />
+
+    <TextView
+        android:id="@+id/breathlessness_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Breathlessness"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_4"
+        app:layout_constraintStart_toStartOf="@+id/gradient_4"
+        app:layout_constraintTop_toTopOf="@+id/gradient_4" />
+
+    <TextView
+        android:id="@+id/depression_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Depression"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_5"
+        app:layout_constraintStart_toStartOf="@+id/gradient_5"
+        app:layout_constraintTop_toTopOf="@+id/gradient_5" />
+
+    <TextView
+        android:id="@+id/loss_of_smell_taste__text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Loss of Smell / Taste"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_6"
+        app:layout_constraintStart_toStartOf="@+id/gradient_6"
+        app:layout_constraintTop_toTopOf="@+id/gradient_6" />
+
+    <Button
+        android:id="@+id/fever_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/symptom_btn"
+        android:text="View"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_1"
+        app:layout_constraintTop_toTopOf="@+id/gradient_1"
+        tools:layout_editor_absoluteX="279dp" />
+
+    <Button
+        android:id="@+id/cough_sore_throat_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/symptom_btn"
+        android:text="View"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_2"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_2"
+        app:layout_constraintTop_toTopOf="@+id/gradient_2" />
+
+    <Button
+        android:id="@+id/loss_of_smell_taste_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/symptom_btn"
+        android:text="View"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_6"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_6"
+        app:layout_constraintTop_toTopOf="@+id/gradient_6" />
+
+    <Button
+        android:id="@+id/weakness_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/symptom_btn"
+        android:text="View"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_3"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_3"
+        app:layout_constraintTop_toTopOf="@+id/gradient_3" />
+
+    <Button
+        android:id="@+id/depression_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/symptom_btn"
+        android:text="View"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_5"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_5"
+        app:layout_constraintTop_toTopOf="@+id/gradient_5" />
+
+    <Button
+        android:id="@+id/breathlessness_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/symptom_btn"
+        android:text="View"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_4"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_4"
+        app:layout_constraintTop_toTopOf="@+id/gradient_4" />
+
+    <TextView
+        android:id="@+id/text_day_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Day 01"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/txt_symptom_monitor"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

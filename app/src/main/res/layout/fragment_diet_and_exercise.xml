@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_symptom_monitor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -30,7 +30,7 @@
         app:layout_constraintGuide_percent="0.35" />
 
     <Button
-        android:id="@+id/button_breathing_exercise"
+        android:id="@+id/fever_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
-        android:id="@+id/button_diet_and_hydration"
+        android:id="@+id/cough_sore_throat_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -58,10 +58,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_breathing_exercise" />
+        app:layout_constraintTop_toBottomOf="@+id/fever_btn" />
 
     <Button
-        android:id="@+id/button_mental_health"
+        android:id="@+id/loss_of_smell_taste_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -74,10 +74,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_regain_smell_taste" />
+        app:layout_constraintTop_toBottomOf="@+id/weakness_btn" />
 
     <Button
-        android:id="@+id/button_regain_smell_taste"
+        android:id="@+id/weakness_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -90,16 +90,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_diet_and_hydration" />
+        app:layout_constraintTop_toBottomOf="@+id/cough_sore_throat_btn" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text_day_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Day 01"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_symptom_monitor"
+        app:layout_constraintStart_toStartOf="@+id/txt_symptom_monitor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
