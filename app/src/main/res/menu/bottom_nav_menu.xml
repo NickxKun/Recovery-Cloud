@@ -8,17 +8,17 @@
 
     <item
         android:id="@+id/navigation_symptom_monitor"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_baseline_note_add_24"
         android:title="@string/title_symptom_monitor" />
 
     <item
         android:id="@+id/navigation_diet_and_exercise"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_baseline_directions_run_24"
         android:title="@string/title_diet_and_exercise" />
 
     <item
         android:id="@+id/navigation_progress_tracker"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_baseline_auto_graph_24"
         android:title="@string/title_progress_tracker" />
 
 </menu>

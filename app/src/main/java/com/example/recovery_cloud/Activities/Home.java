@@ -1,9 +1,14 @@
 package com.example.recovery_cloud.Activities;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -16,6 +21,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.recovery_cloud.R;
 
 public class Home extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +41,6 @@ public class Home extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
 
-
     }
-
 
 }
