@@ -114,7 +114,7 @@ public class SymptomActivity extends AppCompatActivity {
                 else{
                     showMessage("Going to add symptom");
                     SymptomInfo symptomInfo = new SymptomInfo(email, fever, breath, senses, fatigue, depr, cough);
-                    user_ref.push().setValue(symptomInfo);
+                    user_ref.push().setValue(email);
                     showMessage("Data added");
                     //addSymptom(email, fever, breath, senses, fatigue, depr, cough);
 
