@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="350dp"
     android:layout_height="475dp"
@@ -19,20 +20,19 @@
         android:textStyle="bold" />
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/youtube_player_view"
+            android:layout_marginTop="95dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            app:videoId="9xfKY9kMPV0"
             app:autoPlay="true"
-            app:showFullScreenButton="true" />
+            app:showFullScreenButton="false"
+            app:videoId="9xfKY9kMPV0" />
 
     </LinearLayout>
 
