@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:theme="@style/CardView.Light"
+    tools:context=".Activities.ui.symptom_monitor.SymptomMonitorFragment">
+
+    <TextView
+        android:id="@+id/text_day_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Day 01"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/txt_symptom_monitor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_symptom_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Record Your Temperature"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_day_counter" />
+
+
+
+    <ImageView
+        android:id="@+id/gradient1"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_symptom_monitor" />
+
+    <ImageView
+        android:id="@+id/gradient_2"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradient1" />
+
+    <ImageView
+        android:id="@+id/gradient_3"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradient_2" />
+
+
+    <TextView
+        android:id="@+id/fever_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Morning"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient1"
+        app:layout_constraintStart_toStartOf="@+id/gradient1"
+        app:layout_constraintTop_toTopOf="@+id/gradient1" />
+
+    <TextView
+        android:id="@+id/cough_sore_throat_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Afternoon"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_2"
+        app:layout_constraintStart_toStartOf="@+id/gradient_2"
+        app:layout_constraintTop_toTopOf="@+id/gradient_2" />
+
+    <TextView
+        android:id="@+id/weakness_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Night"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_3"
+        app:layout_constraintStart_toStartOf="@+id/gradient_3"
+        app:layout_constraintTop_toTopOf="@+id/gradient_3" />
+
+    <EditText
+        android:hint="Record"
+        android:textColor="#050505"
+        android:gravity="center"
+        android:textColorHint="#bababa"
+        android:id="@+id/morning_temp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/form_symptom_fever_number"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient1"
+        app:layout_constraintEnd_toEndOf="@+id/gradient1"
+        app:layout_constraintTop_toTopOf="@+id/gradient1" />
+
+    <EditText
+        android:hint="Record"
+        android:textColor="#050505"
+        android:gravity="center"
+        android:textColorHint="#bababa"
+        android:id="@+id/afternoon_temp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/form_symptom_fever_number"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_2"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_2"
+        app:layout_constraintTop_toTopOf="@+id/gradient_2" />
+
+    <EditText
+        android:hint="Record"
+        android:textColor="#050505"
+        android:gravity="center"
+        android:textColorHint="#bababa"
+        android:id="@+id/evening_temp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/form_symptom_fever_number"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/gradient_3"
+        app:layout_constraintEnd_toEndOf="@+id/gradient_3"
+        app:layout_constraintTop_toTopOf="@+id/gradient_3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

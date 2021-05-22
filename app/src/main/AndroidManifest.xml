@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Recovery_Cloud">
-        <activity android:name=".Activities.SymptomActivity"></activity>
+        <activity android:name=".Activities.FeverActivity"></activity>
+        <activity android:name=".Activities.SymptomActivity" />
         <activity
             android:name=".Activities.Home"
             android:label="@string/title_activity_home" />
