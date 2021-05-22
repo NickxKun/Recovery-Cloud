@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,6 +21,8 @@ public class HomeFragment extends Fragment {
 
     private Button startAssessmentBtn;
     private Intent SymptomActivity;
+    private ImageView notif_bar;
+    private TextView notif_btn, notif_txt;
 
     private HomeViewModel homeViewModel;
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -29,6 +32,16 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         startAssessmentBtn = root.findViewById(R.id.start_ass_btn);
+        notif_bar = root.findViewById(R.id.notifictaion_bar);
+        notif_btn = root.findViewById(R.id.notification_btn);
+        notif_txt = root.findViewById(R.id.notification_text);
+
+        notif_bar.setVisibility(View.INVISIBLE);
+        notif_btn.setVisibility(View.INVISIBLE);
+        notif_txt.setVisibility(View.INVISIBLE);
+
+
+
         SymptomActivity = new Intent(getActivity(), com.example.recovery_cloud.Activities.SymptomActivity.class);
 
         startAssessmentBtn.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +49,19 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
 
                 startForm();
+
+                notif_bar.setVisibility(View.VISIBLE);
+                notif_btn.setVisibility(View.VISIBLE);
+                notif_txt.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+        notif_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
 
             }
         });
