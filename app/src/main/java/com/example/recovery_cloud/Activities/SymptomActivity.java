@@ -1,5 +1,6 @@
 package com.example.recovery_cloud.Activities;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,7 @@ public class SymptomActivity extends AppCompatActivity {
     private DatabaseReference user_ref;
     private Button asses_btn;
     private String email;
+    private Intent Home;
     //SymptomInfo symptomInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +75,8 @@ public class SymptomActivity extends AppCompatActivity {
             }
         }
         user_ref = FirebaseDatabase.getInstance().getReference("Symptom");
+        user_ref.setValue("HELLO");
+        Home = new Intent(getApplicationContext(), com.example.recovery_cloud.Activities.Home.class);
 
 
         //symptomInfo = new SymptomInfo();
@@ -113,9 +117,26 @@ public class SymptomActivity extends AppCompatActivity {
                 }
                 else{
                     showMessage("Going to add symptom");
+                    showMessage(email);
                     SymptomInfo symptomInfo = new SymptomInfo(email, fever, breath, senses, fatigue, depr, cough);
-                    user_ref.push().setValue(email);
-                    showMessage("Data added");
+                    user_ref.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                            user_ref.setValue(symptomInfo);
+                            showMessage("Data added");
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull @NotNull DatabaseError error) {
+                            showMessage("Data failed to add");
+
+                        }
+                    });
+                    startActivity(Home);
+
+                    //user_ref.push().setValue(email);
+
+
                     //addSymptom(email, fever, breath, senses, fatigue, depr, cough);
 
                 }
