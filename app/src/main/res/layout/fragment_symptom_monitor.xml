@@ -27,7 +27,7 @@
 
 
     <ImageView
-        android:id="@+id/gradient_1"
+        android:id="@+id/gradient1"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginStart="16dp"
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gradient_1" />
+        app:layout_constraintTop_toBottomOf="@+id/gradient1" />
 
     <ImageView
         android:id="@+id/gradient_3"
@@ -113,9 +113,9 @@
         android:textColor="#FFFFFF"
         android:textSize="16dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/gradient_1"
-        app:layout_constraintStart_toStartOf="@+id/gradient_1"
-        app:layout_constraintTop_toTopOf="@+id/gradient_1" />
+        app:layout_constraintBottom_toBottomOf="@+id/gradient1"
+        app:layout_constraintStart_toStartOf="@+id/gradient1"
+        app:layout_constraintTop_toTopOf="@+id/gradient1" />
 
     <TextView
         android:id="@+id/cough_sore_throat_text_view"
@@ -191,9 +191,9 @@
         android:text="View"
         app:backgroundTint="#FFFFFF"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/gradient_1"
-        app:layout_constraintEnd_toEndOf="@+id/gradient_1"
-        app:layout_constraintTop_toTopOf="@+id/gradient_1" />
+        app:layout_constraintBottom_toBottomOf="@+id/gradient1"
+        app:layout_constraintEnd_toEndOf="@+id/gradient1"
+        app:layout_constraintTop_toTopOf="@+id/gradient1" />
 
     <Button
         android:id="@+id/cough_sore_throat_btn"
