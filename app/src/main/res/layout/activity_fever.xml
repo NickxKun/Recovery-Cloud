@@ -117,6 +117,7 @@
 
     <EditText
         android:hint="Record"
+        android:textColor="#050505"
         android:gravity="center"
         android:textColorHint="#bababa"
         android:id="@+id/morning_temp"
@@ -132,6 +133,7 @@
 
     <EditText
         android:hint="Record"
+        android:textColor="#050505"
         android:gravity="center"
         android:textColorHint="#bababa"
         android:id="@+id/afternoon_temp"
@@ -147,6 +149,7 @@
 
     <EditText
         android:hint="Record"
+        android:textColor="#050505"
         android:gravity="center"
         android:textColorHint="#bababa"
         android:id="@+id/evening_temp"
