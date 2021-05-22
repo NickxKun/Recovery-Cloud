@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.recovery_cloud.Activities.ui.home.HomeFragment;
 import com.example.recovery_cloud.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -84,6 +85,7 @@ public class SymptomActivity extends AppCompatActivity {
         asses_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 asses_btn.setVisibility(View.INVISIBLE);
                 int selectedid = gender_radio.getCheckedRadioButtonId();
                 selected_gender = (RadioButton) findViewById(selectedid);
@@ -132,19 +134,26 @@ public class SymptomActivity extends AppCompatActivity {
 
                         }
                     });
+
+                    HomeFragment home = new HomeFragment();
+                    home.setAssessmentDone();
+
                     startActivity(Home);
 
                     //user_ref.push().setValue(email);
-
 
                     //addSymptom(email, fever, breath, senses, fatigue, depr, cough);
 
                 }
 
             }
+
         });
-}
-/*private void addSymptom(String email, Boolean fever,Boolean breath, Boolean senses, Boolean fatigue, Boolean depr, Boolean cough){
+
+    }
+
+    /*private void addSymptom(String email, Boolean fever,Boolean breath, Boolean senses, Boolean fatigue, Boolean depr, Boolean cough){
+
         symptomInfo.setEmail(email);
         symptomInfo.setFever(fever);
         symptomInfo.setBreath(breath);
@@ -157,8 +166,8 @@ public class SymptomActivity extends AppCompatActivity {
         user_ref.push().setValue(symptomInfo);
         showMessage("Data added");
 
+    }*/
 
-}*/
     private void showMessage(String message) {
 
         Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,8 +25,13 @@ public class HomeFragment extends Fragment {
     private Intent MeaasureSpO2;
     private ImageView notif_bar;
     private TextView notif_btn, notif_txt;
-
+    private Boolean assessmentDone = false;
     private HomeViewModel homeViewModel;
+
+    public void setAssessmentDone() {
+        assessmentDone = true;
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -51,7 +57,6 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
 
                 startForm();
-
                 notif_bar.setVisibility(View.VISIBLE);
                 notif_btn.setVisibility(View.VISIBLE);
                 notif_txt.setVisibility(View.VISIBLE);
@@ -81,5 +86,4 @@ public class HomeFragment extends Fragment {
         startActivity(MeaasureSpO2);
 
     }
-
 }
