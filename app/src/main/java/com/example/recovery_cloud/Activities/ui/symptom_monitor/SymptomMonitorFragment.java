@@ -33,7 +33,7 @@ public class SymptomMonitorFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                FeverActivity = new Intent(getActivity(), com.example.recovery_cloud.Activities.SymptomActivity.class);
+                FeverActivity = new Intent(getActivity(), com.example.recovery_cloud.Activities.FeverActivity.class);
                 startForm();
 
             }
