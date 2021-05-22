@@ -21,6 +21,7 @@ public class HomeFragment extends Fragment {
 
     private Button startAssessmentBtn;
     private Intent SymptomActivity;
+    private Intent MeaasureSpO2;
     private ImageView notif_bar;
     private TextView notif_btn, notif_txt;
 
@@ -43,6 +44,7 @@ public class HomeFragment extends Fragment {
 
 
         SymptomActivity = new Intent(getActivity(), com.example.recovery_cloud.Activities.SymptomActivity.class);
+        MeaasureSpO2 = new Intent(getActivity(), com.example.recovery_cloud.Activities.MeaasureSpO2Activity.class);
 
         startAssessmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +63,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-
+                startMeasurement();
 
             }
         });
@@ -72,6 +74,11 @@ public class HomeFragment extends Fragment {
     private void startForm() {
 
         startActivity(SymptomActivity);
+
+    }
+    private void startMeasurement() {
+
+        startActivity(MeaasureSpO2);
 
     }
 
