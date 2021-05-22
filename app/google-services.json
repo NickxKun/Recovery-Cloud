@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "605181825711",
-    "project_id": "recovery-cloud-b1a01",
-    "storage_bucket": "recovery-cloud-b1a01.appspot.com"
+    "project_number": "270516900422",
+    "project_id": "recovery-cloud-adbb9",
+    "storage_bucket": "recovery-cloud-adbb9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:605181825711:android:802229a4ae4622eaf4ba5a",
+        "mobilesdk_app_id": "1:270516900422:android:76a87586f1b30fe32fb047",
         "android_client_info": {
           "package_name": "com.example.recovery_cloud"
         }
       },
       "oauth_client": [
         {
-          "client_id": "605181825711-l9qkog7b29oet3i845hfc2d350p9cp9r.apps.googleusercontent.com",
+          "client_id": "270516900422-8ak69oeng06vrv97lmm72er8o6brdsqo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB2VfjHpFczn3pgQu0xefvC5ACOADbtGes"
+          "current_key": "AIzaSyDJlfI45PFhr5r6kpQx31rHQKEAt5Mreno"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "605181825711-l9qkog7b29oet3i845hfc2d350p9cp9r.apps.googleusercontent.com",
+              "client_id": "270516900422-8ak69oeng06vrv97lmm72er8o6brdsqo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
